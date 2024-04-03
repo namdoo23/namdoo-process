@@ -1,0 +1,345 @@
+* {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+#main {
+  width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  border-bottom: 1px solid black;
+}
+section:last-child {
+  border-bottom: 0px solid black;
+}
+h1 {
+  color: #f19043;
+  font-size: 32px;
+}
+h2 {
+  color: #f19043;
+  font-size: 24px;
+}
+/* 타이틀 */
+
+.title {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+}
+.title .logo {
+  top: 20px;
+  left: 120px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.title .logo img:nth-child(1) {
+  width: 378px;
+}
+.title .logo img:nth-child(2) {
+  height: 140px;
+}
+.title .portfolio {
+  position: absolute;
+  left: 143px;
+  bottom: 283px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.title .portfolio h1 {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+.title .lettering {
+  height: 176px;
+  border-left: 3px solid #f19043;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.title .lettering > span {
+  padding: 8px;
+
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title .lettering > span > p:first-child {
+  font-weight: bold;
+}
+.title .title-shot {
+  position: absolute;
+  right: 143px;
+  bottom: 279px;
+  width: 1046px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.title .to-the-shop-button {
+  position: absolute;
+  right: 143px;
+  bottom: 135px;
+  width: 300px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f19043;
+}
+.title .to-the-shop-button > p {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* 개요 */
+.overview {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+}
+.overview .head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 30px 0 30px 0;
+}
+.overview .contents {
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+/* 왼쪽 */
+.overview .contents .left {
+  width: 841px;
+  display: flex;
+  flex-direction: column;
+}
+.overview .contents .left .left-1 {
+  display: flex;
+  flex-direction: column;
+}
+.overview .contents .left .left-1 .overview-logo-images {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.overview .contents .left .left-1 .overview-logo-images img:nth-child(1) {
+  width: 180px;
+}
+.overview .contents .left .left-1 .overview-logo-images img:nth-child(2) {
+  width: 355px;
+}
+.overview .left-2 {
+  margin-top: 50px;
+  display: flex;
+}
+.overview .left-2 .mood-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 466px;
+}
+.overview .left-2 .mood-left div {
+  width: 135px;
+  margin: 0 18px 18px 0;
+}
+.overview .left-2 .mood-left img {
+  width: 135px;
+  height: 135px;
+}
+.overview .left-2 .mood-left .orange-box {
+  background-color: #f19043;
+}
+.overview .left-2 .mood-right {
+  height: 293px;
+}
+.overview .left-2 .mood-right img {
+  height: 293px;
+}
+
+/* 오른쪽 */
+.overview .contents .right {
+  width: 841px;
+  display: flex;
+  flex-direction: column;
+}
+.overview .contents .right > div:first-child {
+  height: 300px;
+}
+
+.overview .contents .right .right-1 {
+  display: flex;
+  gap: 100px;
+}
+.overview .contents .right .right-1 > div > div:nth-child(2) {
+  margin-bottom: 18px;
+}
+.overview .contents .right .right-1 .design-color {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  background-color: #f19043;
+  color: #fff;
+  font-size: 18px;
+}
+.overview .contents .right .right-1 h2 {
+  padding-bottom: 40px;
+}
+.overview .contents .right .right-1 > div {
+  display: flex;
+  flex-direction: column;
+}
+.overview .contents .right .images {
+  display: flex;
+  flex-direction: column;
+}
+.overview .contents .right .right-1 .icons {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 10px;
+}
+.overview .contents .right .right-1 .icons img {
+  height: 30px;
+  width: 30px;
+}
+.overview .contents .right .right-2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.overview .contents .right .right-2 h2 {
+  padding-bottom: 30px;
+}
+.overview .contents .right .right-2 img {
+  padding-top: 20px;
+}
+
+/* 웹사이트 */
+.curating {
+  width: 555px;
+  display: flex;
+  flex-direction: column;
+}
+.curating > div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+}
+.curating-2 {
+  text-align: right;
+}
+.curating .bold {
+  font-weight: bold;
+}
+.website img {
+  width: 1127px;
+}
+.website {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.website > div {
+  width: 100%;
+  display: flex;
+  gap: 18px;
+}
+
+.website .header {
+  border-bottom: 1px solid black;
+}
+.website .slider {
+  border-bottom: 1px solid black;
+}
+.website .category {
+  border-bottom: 1px solid black;
+}
+.website .goods-section {
+  border-bottom: 1px solid black;
+}
+.website .goods-section-detail {
+  border-bottom: 1px solid black;
+}
+.website .collection {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.website .footer {
+  border-bottom: 1px solid black;
+}
+.website .banner {
+  border-bottom: 1px solid black;
+}
+.website .banner-detail {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.website .product-info {
+  border-bottom: 1px solid black;
+}
+.website .product-info-detail-1 {
+  border-bottom: 1px solid black;
+}
+.website .product-info-detail-2 {
+  border-bottom: 1px solid black;
+}
+/*  사이트로 바로가기 */
+.to-the-site {
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.to-the-site .logo {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.to-the-site .logo img:nth-child(1) {
+  width: 378px;
+}
+.to-the-site .logo img:nth-child(2) {
+  height: 140px;
+}
+.to-the-site > img:nth-child(2) {
+  width: 1046px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.to-the-site > div:last-child {
+  width: 1046px;
+  display: flex;
+  justify-content: flex-end;
+}
+.to-the-site .to-the-shop-button {
+  width: 300px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f19043;
+}
+.to-the-site .to-the-shop-button > p {
+  color: #fff;
+  font-size: 18px;
+}

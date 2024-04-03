@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.96 56.35">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 2.21em;
+      }
+
+      .cls-2 {
+        letter-spacing: 2.12em;
+      }
+
+      .cls-3 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #231f20;
+      }
+
+      .cls-6 {
+        letter-spacing: 2.18em;
+      }
+
+      .cls-4 {
+        font-size: 41.43px;
+        letter-spacing: .08em;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: Baskerville-BT, 'Baskerville BT';
+      }
+
+      .cls-5 {
+        font-size: 11.84px;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(3.47 34.36)"><tspan x="0" y="0">NAMDOO</tspan></text>
+  <text class="cls-5" transform="translate(5.97 53.28)"><tspan class="cls-2" x="0" y="0">F</tspan><tspan class="cls-1" x="32.27" y="0">A</tspan><tspan class="cls-6" x="66.25" y="0">SHION</tspan></text>
+  <line class="cls-3" x1="6.6" y1="38.84" x2="219.48" y2="38.84"/>
+</svg>

@@ -1,0 +1,192 @@
+/* 노멀라이즈 */
+* {
+  color: inherit;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* 하단 스크롤바 안보이게 */
+body {
+  overflow-x: hidden;
+}
+
+/* 요소 */
+
+/* 상품카드 아이콘 */
+.card-icons img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+/* 커스텀 라이브러리 */
+
+/* Header */
+#header {
+  /* 헤더 fixed, 콘텐츠 top에 55px 마진 */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #cbcbcb;
+  background-color: #fff;
+  z-index: 10;
+}
+
+#main {
+  margin: 70px auto 0 auto;
+}
+
+#header > .header-con {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1700px;
+  height: 70px;
+}
+#header > .header-con > a.logo {
+  width: 410px;
+  height: 81px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+#header > .header-con > a.logo > img:first-child {
+  height: 50px;
+}
+#header > .header-con > a.logo > img:last-child {
+  height: 40px;
+}
+#header > .header-con > .search-bar {
+  display: flex;
+  width: 373px;
+  border-bottom: 1px solid #000000;
+  margin: 0 auto 0 162px;
+}
+#header > .header-con > .search-bar > input {
+  flex-grow: 1;
+}
+#header > .header-con > .search-bar > input::placeholder {
+  font-size: 16px;
+}
+#header > .header-con > .search-bar > img {
+  padding: 5px;
+  height: 25px;
+  cursor: pointer;
+}
+#header .icons {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+#header .icons > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .icons img {
+  height: 30px;
+  width: 30px;
+}
+
+#nav {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 268px;
+}
+#nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 6px solid white;
+}
+#nav a.active {
+  color: #f19043;
+  border-bottom: 6px solid #f19043;
+}
+#nav a.active:hover {
+  color: #f19043;
+}
+#nav a:hover {
+  color: #c7c7c7;
+}
+
+/* 푸터 영역 */
+#footer {
+  border-top: 1px solid black;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+#footer .copyright-bar {
+  width: 100%;
+  height: 59px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+#footer > .footer-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 272px;
+  margin: 0 auto;
+  width: 1414px;
+}
+#footer .FNB-logo {
+  width: 412px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .FNB-con {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+#footer ul {
+  border-left: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+}
+#footer ul > li:first-child {
+  font-weight: bold;
+}
+#footer .FNB-logo > img:first-child {
+  width: 123px;
+  height: 98px;
+}
+#footer .FNB-logo > img:last-child {
+  width: 338px;
+  height: 81px;
+}
+#footer .follow-us-category {
+  align-items: center;
+  width: 412px;
+}
+#footer .follow-us-category li {
+  width: 231px;
+}
+#footer .footer-icons {
+  display: flex;
+  gap: 33px;
+}
+#footer .footer-icons img {
+  height: 55px;
+  width: 55px;
+}

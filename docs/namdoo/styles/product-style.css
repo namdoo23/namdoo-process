@@ -1,0 +1,256 @@
+/* 메인 1414px */
+#main {
+  margin-top: calc(55px + 46px);
+  width: 1414px;
+}
+
+/* 상품 섹션*/
+.product-detail {
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
+}
+.product-detail h3 {
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+/* 상품 이미지 */
+.product-image img {
+  width: 698px;
+}
+/* 상품 설명 */
+.product-page {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.product-about {
+  width: 698px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+.product-about > h1:first-child {
+  font-size: 30px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.product-about .product-about-detail {
+  padding: 36px 0 36px 0;
+}
+.product-buy-part {
+  padding-top: 60px;
+  display: flex;
+  gap: 50px;
+}
+.product-buy-part > div:first-child {
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+/* 상품 상세설명/옵션 */
+
+/* 상세설명 */
+.info-con {
+  display: flex;
+  gap: 44px;
+}
+.info-con > span {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.info-detail {
+  font-weight: bold;
+}
+/* 좋아요 */
+.like {
+  font-size: 16px;
+  color: #e80000;
+  display: flex;
+  align-items: center;
+}
+.like img {
+  width: 20px;
+  height: 20px;
+}
+/* 후기 */
+.review-con {
+  position: relative;
+}
+.review-rating {
+  margin-left: 95px;
+  display: flex;
+}
+.review-rating > p:last-child {
+  color: #999999;
+}
+.stars {
+  top: 0;
+  width: 90px;
+  position: absolute;
+}
+/* 퍼센트 */
+.rating {
+  --rate: 4.19;
+  overflow: hidden;
+  top: 0;
+  /* width 값으로 별점 %표현
+    100:5 = x:4.19
+    점수 X 100 / 5 = 퍼센티지 너비
+    --rate에 점수넣기
+  */
+  width: calc(var(--rate) * 100px / 5);
+  height: 20px;
+  position: absolute;
+}
+.review-summary {
+  font-size: 14px;
+  font-weight: bold;
+  color: #5e50b8;
+}
+/* 구분선 */
+.vertical-line {
+  display: flex;
+  align-items: center;
+}
+.vertical-line > div {
+  width: 1px;
+  height: 293px;
+  background-color: black;
+}
+/* 옵션 */
+.option-con {
+  display: flex;
+  gap: 23px;
+}
+.option-con > span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.option-select select {
+  font-size: 14px;
+  width: 150px;
+  height: 24px;
+  border-bottom: 1px solid black;
+}
+/* 상품 구매란 */
+.product-price h3 {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.product-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price-con {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.price-con > p {
+  font-size: 34px;
+  font-weight: bold;
+  color: #f19043;
+}
+/* 버튼 */
+.button-con {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.button-con button {
+  width: 269px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-button {
+  border-radius: 8px;
+
+  height: 90px;
+  font-size: 22px;
+  background-color: black;
+  color: #fff;
+}
+.basket-button {
+  border-radius: 8px;
+  height: 42px;
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.like-button {
+  transition: all 0.3s;
+  border-radius: 8px;
+  height: 42px;
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid #e80000;
+  color: #e80000;
+}
+.like-button.active {
+  color: #fff;
+  background-color: #ff7272;
+  border: 1px solid #ff7272;
+}
+
+/* 추천 제품/비슷한 상품 */
+.goods-recommend {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.goods-recommend-card {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+.goods-recommend-cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.goods-recommend-card > a:first-child {
+  width: 230px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods-recommend-card > a:first-child > img {
+  width: 216px;
+  height: 216px;
+}
+
+.goods-recommend-card .card-bottom {
+  height: 60px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.goods-recommend-card .card-bottom > span:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.goods-recommend-card .price-tag {
+  display: flex;
+}
+.goods-recommend-card .price-tag > p {
+  font-weight: bold;
+}
+
+/* 푸터 마진 */
+#footer {
+  margin-top: 55px;
+}

@@ -1,0 +1,687 @@
+#main {
+  width: 100%;
+}
+
+/* SHOP 스타일 요소 */
+
+/* 상품 섹션 */
+.goods-section {
+  margin: 136px auto 0 auto;
+  width: 1700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.goods-section .section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.goods-section .section-head h1 {
+  font-weight: bold;
+}
+.goods-section .section-head > p {
+  font-size: 18px;
+  margin-top: 16px;
+}
+.goods-section .section-head > div {
+  width: 554px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.goods-section .goods-deco {
+  background-color: black;
+  height: 1px;
+}
+
+/* 상품 카드 */
+.shop-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-cards {
+  margin-top: 68px;
+  display: flex;
+  gap: 18px;
+}
+.goods-cards .card-bottom {
+  height: 60px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.goods-cards .card-bottom > span:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.goods-cards .price-tag {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.goods-cards .price-tag .sales-tag {
+  color: #f72a2a;
+  margin-right: 8px;
+}
+
+.goods-cards > a:first-child > img {
+  width: 410px;
+  height: 560px;
+}
+
+/* 커스텀 스타일 */
+
+/* 슬라이더 */
+.slide {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+  height: 800px;
+  box-sizing: border-box;
+}
+.slider-con {
+  --slide: 0;
+  display: flex;
+  position: absolute;
+  /* left 값으로 1920px 단위 이동 */
+  left: calc(var(--slide) * -1920px);
+  transition: all 0.5s;
+}
+.slide-con {
+  position: relative;
+  width: 1700px;
+}
+
+/* 인디케이터 위치 */
+.slide-indicater {
+  z-index: 4;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 38px;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+}
+/* 인디케이터 */
+.indicater input[type="radio"] {
+  cursor: pointer;
+  transition: all 0.5s;
+  appearance: none;
+  background-color: #454545;
+  width: 18px;
+  height: 18px;
+  border-radius: 500px;
+}
+.indicater input[type="radio"]:checked {
+  background-color: #f19043;
+}
+/* 슬라이더 버튼 */
+.indicater .button-group {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1700px;
+  bottom: 330px;
+}
+.slider-button {
+  transition: opacity 0.5s;
+  border: 1px solid #ffffff;
+  background-color: inherit;
+  opacity: 55%;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 500px;
+}
+.slider-button:hover {
+  opacity: 100%;
+}
+.slider-button img {
+  width: 50px;
+  height: 50px;
+}
+/* 슬라이드 */
+.slider .slide {
+  display: flex;
+  position: relative;
+  width: 1920px;
+  height: 800px;
+  box-sizing: border-box;
+}
+
+.slider .deco-img {
+  position: absolute;
+}
+.slide-letter {
+  position: absolute;
+}
+.slide-more-button {
+  background-color: #f19043;
+  color: #fff;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  width: 182px;
+  height: 60px;
+  position: absolute;
+  left: 1002px;
+  bottom: 170px;
+}
+.slide-more-button img {
+  height: 25px;
+}
+
+/* 슬라이드1 */
+
+/* 배경 */
+.slide-1 {
+  background-color: #fff3d2;
+}
+
+.slide-1 .deco-img img {
+  position: absolute;
+}
+.slide-1 .deco-img img:nth-child(1) {
+  left: -110px;
+  height: 800px;
+}
+/* 자켓남성 */
+.slide-1 .deco-img img:nth-child(2) {
+  transition: all 0.7s;
+  transition-delay: 300ms;
+  opacity: 0;
+  z-index: 1;
+  top: 100px;
+  left: 2000px;
+}
+
+/* 삼각형 */
+.slide-1 .deco {
+  transition: all 0.5s;
+  transition-delay: 400ms;
+  --size: 240px;
+  --color: #586d36;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: var(--size) solid var(--color);
+  border-right: var(--size) solid var(--color);
+  border-bottom: var(--size) solid var(--color);
+  border-left: var(--size) solid var(--color);
+}
+.slide-1 .deco-1 {
+  border-top: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  --size: 240px;
+  top: calc(360px + var(--size) * 2);
+  left: 716px;
+}
+.slide-1 .deco-2 {
+  border-bottom: var(--size) solid transparent;
+  border-left: var(--size) solid transparent;
+  --size: 150px;
+  top: -300px;
+  left: 1520px;
+}
+
+/* 애니메이션 */
+
+/* 자켓 남성 */
+.slide-1.on .deco-img img:nth-child(2) {
+  opacity: 100%;
+  left: 1400px;
+}
+/* 삼각형 */
+.slide-1.on .deco-1 {
+  border-top: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  --size: 240px;
+  top: 360px;
+  left: 716px;
+}
+.slide-1.on .deco-2 {
+  border-bottom: var(--size) solid transparent;
+  border-left: var(--size) solid transparent;
+  --size: 150px;
+  top: 0;
+  left: 1520px;
+}
+/* 글자 */
+.slide-1 .slide-letter {
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  left: 1002px;
+}
+.slide-1 .slide-letter > p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+.slide-1 .slide-letter > h1:nth-child(2) {
+  font-size: 50px;
+  font-weight: bold;
+}
+.slide-1 .slide-letter > p:nth-child(3) {
+  margin-top: 23px;
+  font-size: 20px;
+}
+
+/* 슬라이드2 */
+.slide-2 {
+  background-color: #b6e18a;
+}
+
+/* 이미지 */
+.slide-2 .deco-img > img {
+  transition: all 700ms;
+  position: absolute;
+}
+.slide-2 .deco-img > img:nth-child(1) {
+  left: 100px;
+  top: 800px;
+}
+.slide-2 .deco-img > img:nth-child(2) {
+  top: 800px;
+  left: 429px;
+}
+.slide-2 .bg-con {
+  left: 859px;
+  height: 800px;
+  width: 797px;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-con > img:nth-child(1) {
+  opacity: 35%;
+}
+/* 벚꽃배경 여성 */
+.bg-con > img:nth-child(2) {
+  transition: all 700ms;
+  transition-delay: 500ms;
+  opacity: 0;
+  position: absolute;
+  right: 54px;
+  top: 208px;
+}
+/* 글자 */
+.slide-2 .slide-letter {
+  position: absolute;
+  top: 74px;
+  left: 143px;
+}
+.slide-2 .slide-letter {
+  color: #fff;
+  font-weight: bold;
+}
+.slide-2 .slide-letter p:nth-child(1) {
+  font-weight: 400;
+  font-size: 20px;
+}
+.slide-2 .slide-letter h1:nth-child(2) {
+  font-size: 50px;
+}
+.slide-2 .slide-letter p:nth-child(3) {
+  font-size: 30px;
+}
+.slide-2-point {
+  color: #ff8a8a;
+}
+/* 애니메이션 */
+
+/* 이미지 */
+.slide-2.on .deco-img > img:nth-child(1) {
+  left: 100px;
+  top: 309px;
+}
+.slide-2.on .deco-img > img:nth-child(2) {
+  top: 254px;
+  left: 429px;
+}
+.slide-2.on .bg-con > img:nth-child(2) {
+  opacity: 100%;
+  position: absolute;
+  right: 54px;
+  top: 208px;
+}
+/* 슬라이드3 */
+.slide-3 {
+  background-color: #c6e6ff;
+}
+
+.slide-3 .slide-letter {
+  top: 279px;
+  left: 658px;
+}
+.slide-3 .slide-letter > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 28px;
+}
+.slide-3 .slide-letter > h1:nth-child(2) {
+  font-weight: bold;
+  font-size: 50px;
+}
+.slide-3 .slide-letter > p:nth-child(3) {
+  margin-top: 8px;
+  font-size: 20px;
+}
+/* 가방 이미지 */
+.slide-3 .bag-con {
+  transition: all 0.5s;
+  transition-delay: 400ms;
+
+  position: absolute;
+  background-color: #ffffff;
+  --size: 0;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 500px;
+  transform: translateY(-50%);
+  left: calc(370px - var(--size) / 2);
+  top: 50%;
+  overflow: hidden;
+}
+.slide-3 .bag-con > img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  transform: translateY(-50%);
+  left: 0;
+  top: 40%;
+}
+/* 아이콘 이미지 */
+.slide-3 .deco-img img {
+  transition: all 0.5s;
+  position: absolute;
+}
+.slide-3 .instagram-ico {
+  opacity: 0;
+  transition-delay: 500ms;
+  top: 119px;
+  --size: 170px;
+  rotate: -30deg;
+  width: var(--size);
+  height: var(--size);
+  left: 1530px;
+}
+.slide-3 .facebook-ico {
+  opacity: 0;
+  transition-delay: 1000ms;
+  top: 132px;
+  --size: 150px;
+  rotate: 0deg;
+  width: var(--size);
+  height: var(--size);
+  left: 1747px;
+}
+.slide-3 .kakaotalk-ico {
+  opacity: 0;
+  transition-delay: 1500ms;
+  top: 270px;
+  --size: 120px;
+  rotate: 30deg;
+  width: var(--size);
+  height: var(--size);
+  left: 2100px;
+}
+/* 애니메이션 */
+
+/* 아이콘 */
+.slide-3.on .instagram-ico {
+  opacity: 100%;
+  transition-delay: 300ms;
+  top: 119px;
+  --size: 170px;
+  rotate: -30deg;
+  width: var(--size);
+  height: var(--size);
+  left: 1030px;
+}
+.slide-3.on .facebook-ico {
+  opacity: 100%;
+  transition-delay: 600ms;
+  top: 132px;
+  --size: 150px;
+  rotate: 0deg;
+  width: var(--size);
+  height: var(--size);
+  left: 1247px;
+}
+.slide-3.on .kakaotalk-ico {
+  opacity: 100%;
+  transition-delay: 900ms;
+  top: 270px;
+  --size: 120px;
+  rotate: 30deg;
+  width: var(--size);
+  height: var(--size);
+  left: 1400px;
+}
+/* 가방 컨테이너 */
+.slide-3.on .bag-con {
+  --size: 430px;
+}
+/* 슬라이드4 */
+.slide-4 {
+  background-color: #84608d;
+}
+/* 이미지 */
+.slide-4 .deco-img img {
+  width: 267px;
+  height: 326px;
+  border: 3px solid white;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.slide-4 .deco-img {
+  position: absolute;
+  left: 253px;
+  display: flex;
+  gap: 16px;
+}
+.slide-4 .deco-img > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.slide-4 .deco-img .right {
+  transform: translateY(-163px);
+}
+/* 글 */
+.slide-4 .slide-letter {
+  color: white;
+  left: 969px;
+  top: 250px;
+}
+.slide-4 .slide-letter p:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+}
+.slide-4 .slide-letter h1:nth-child(2) {
+  font-weight: bold;
+  font-size: 50px;
+}
+.slide-4 .slide-letter p:nth-child(3) {
+  font-size: 28px;
+}
+.slide-4 .slide-letter p:nth-child(4) {
+  transition: opacity 1000ms;
+  transition-delay: 300ms;
+  opacity: 0;
+  margin-top: 30px;
+  font-size: 50px;
+}
+/* 애니메이션 */
+
+/* 글자 */
+.slide-4.on .slide-letter p:nth-child(4) {
+  opacity: 100%;
+}
+
+/* 카테고리 */
+.category-menu {
+  width: 100%;
+  height: 246px;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+}
+.category-menu-con {
+  margin: 0 auto;
+  width: 1700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 107px;
+}
+.category-menu-con li {
+  display: flex;
+  align-items: center;
+}
+.category-menu-con li a {
+  width: 180px;
+  height: 180px;
+  border-radius: 500px;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category-menu-con li p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.category-menu-con li a img {
+  width: 120px;
+  height: 120px;
+}
+
+/* 신상품 */
+
+/* 신상품 데코 */
+.new-goods-section .goods-deco {
+  background-color: black;
+  width: 225px;
+  height: 1px;
+}
+
+/* 인기 상품 */
+
+/* 인기상품 데코 */
+.hot-goods-section .goods-deco {
+  background-color: black;
+  width: 212px;
+  height: 1px;
+}
+
+/* 이벤트 배너 */
+.evnet-banners {
+  width: 1700px;
+  margin: 47px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* 컬렉션 섹션 */
+
+.collection-goods-section .section-head > div {
+  width: 842px;
+}
+
+/* 컬렉션 데코 */
+.collection-goods-section .goods-deco {
+  background-color: black;
+  width: 249px;
+  height: 1px;
+}
+
+.collection-goods-con {
+  margin-top: 30px;
+}
+
+/* 컬렉션 탭메뉴 */
+.collection-tabmenu {
+  width: 560px;
+  margin: 30px auto 0 auto;
+  display: flex;
+}
+.collection-tabmenu button {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: inherit;
+  border-bottom: 7px solid white;
+}
+.collection-tabmenu button.active {
+  color: #f19043;
+  border-bottom: 7px solid #f19043;
+}
+.collection-tabmenu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collection-tabmenu li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: #c7c7c7;
+}
+.collection-tabmenu li:last-child::after {
+  content: "";
+  width: 0;
+}
+.collection-goods-con {
+  display: flex;
+  gap: 18px;
+}
+/* 컬렉션 배너 */
+.collection-goods-con .collection-cards {
+  margin: 0;
+  display: none;
+  width: 840px;
+  flex-wrap: wrap;
+}
+
+.collection-goods-con .collection-cards.active {
+  display: flex;
+}
+
+/* 콜렉션 카드 */
+.collection-goods-con .collection-cards .card-bottom {
+  width: 268px;
+}
+
+.collection-card > a:first-child > img {
+  width: 268px;
+  height: 286px;
+}
+
+/* 푸터 마진 */
+#footer {
+  margin-top: 180px;
+}
